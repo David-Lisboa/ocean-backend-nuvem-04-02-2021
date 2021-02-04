@@ -18,9 +18,9 @@ const { MongoClient, ObjectId } = require('mongodb');
     const app = express()
 
     app.use(bodyParser.json());
-
-    // process.env.port para o heroku pegar a porta
-    const port = process.env.port || 3000;
+    
+    //process.env.PORT pega porta do hiroku
+    const port = process.env.PORT || 3000;
 
   /*
   Create, Read (All/Single), Update & Delete
